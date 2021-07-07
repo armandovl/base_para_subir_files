@@ -1,0 +1,32 @@
+<!--Mi formulario myForm-->
+<form id="miFormulario" >
+
+    <!--Nombre para el archivo myName-->
+    <center>
+    <select id="otro" name="nombreParaArchivo" data-native-menu="false">
+         <option>Tipo Alimento</option>
+         <option value="Desayuno">desayuno</option>
+         <option value="Comida">comida</option>
+         <option value="Cena">cena</option>
+         <option value="Merienda">merienda</option>
+    </select>
+    <br>
+      <input type="text" name="detalles" placeholder="2tortillas#4vasos" style="width:80%" id="deta">
+     <br>
+
+    </center>
+
+   <!--Archivos para subir myFile-->
+   <input type="file" name="miArchivo">
+   
+   <input type="file" name="miArchivo2">
+   <input type="file" name="miArchivo3">
+    
+    <br>
+   
+   <!--Botón para enviar-->
+    <input type="submit" id="boton1" src="" value="Subir Archivos" 
+           onclick="this.value='Espere un momento...';google.script.run.subiendoArchivos(this.parentNode);return false">
+  
+</form>
+
